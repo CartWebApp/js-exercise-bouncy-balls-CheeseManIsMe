@@ -12,7 +12,7 @@ body {
   height: inherit;
 }
 
-h1 {
+h1, input {
   font-size: 2rem;
   letter-spacing: -1px;
   position: absolute;
@@ -22,4 +22,9 @@ h1 {
 
   color: transparent;
   text-shadow: 0 0 4px white;
+}
+
+input {
+  top: 30px;
+  filter: (2px);
 }

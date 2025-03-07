@@ -72,9 +72,14 @@ Ball.prototype.collisionDetect = function() {
 
 
 let balls = [];
+let sliderRange = document.getElementById(`slider`).value;
 
-while (balls.length < 1850) {
-  let size = random(2,2);
+sliderRange.oninput = function() {
+  sliderRange
+}
+
+while (balls.length < sliderRange) {
+  let size = random(.1,1);
   let ball = new Ball(
     // ball position always drawn at least one ball width away from the edge of the canvas, to avoid drawing errors
     random(0+size,width-size),
